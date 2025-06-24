@@ -2934,7 +2934,7 @@
 <p>A2A treats agents as standard enterprise applications, relying on established web security practices. Identity information is <strong>not</strong> transmitted within A2A JSON-RPC payloads; it is handled at the HTTP transport layer.</p>
 <p>For a comprehensive guide on enterprise security aspects, see <a href="../topics/enterprise-ready/">Enterprise-Ready Features</a>.</p>
 <h3 id="41-transport-security">4.1. Transport Security<a class="headerlink" href="#41-transport-security" title="Permanent link">&para;</a></h3>
-<p>As stated in section 3.1, production deployments <strong>MUST</strong> use HTTPS. Implementations <strong>SHOULD</strong> use modern <a href="https://datatracker.ietf.org/doc/html/rfc8446">TLS</a> configurations (TLS 1.2+ recommended) with strong cipher suites.</p>
+<p>As stated in section 3.1, production deployments <strong>MUST</strong> use HTTPS. Implementations <strong>SHOULD</strong> use modern <a href="https://datatracker.ietf.org/doc/html/rfc8446">TLS</a> configurations (TLS 1.3+ recommended) with strong cipher suites.</p>
 <h3 id="42-server-identity-verification">4.2. Server Identity Verification<a class="headerlink" href="#42-server-identity-verification" title="Permanent link">&para;</a></h3>
 <p>A2A Clients <strong>SHOULD</strong> verify the A2A Server's identity by validating its TLS certificate against trusted certificate authorities (CAs) during the TLS handshake.</p>
 <h3 id="43-clientuser-identity-authentication-process">4.3. Client/User Identity &amp; Authentication Process<a class="headerlink" href="#43-clientuser-identity-authentication-process" title="Permanent link">&para;</a></h3>
